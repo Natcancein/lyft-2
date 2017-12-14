@@ -94,3 +94,8 @@
     width: 100%;
 
 }
+
+.alerta {
+    text-align: center;
+    color:red;
+}

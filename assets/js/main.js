@@ -15,7 +15,7 @@ $('#section1').hide(3000);
  //comprobar codigo numero de teléfono
 $("#enviar").click(function () {  
     if($("#telefono").val().length == " ") {  
-        alert("El teléfono es obligatorio");  
+        $(".alerta").text("El teléfono es obligatorio");  
         return false;  
     }  
     return false;  
@@ -23,7 +23,7 @@ $("#enviar").click(function () {
 
 $("#enviar").click(function () {  
     if(isNaN($("#telefono").val())) {  
-        alert("El teléfono solo debe contener números");  
+         $(".alerta").text("Debes ingresar números");  
         return false;  
     }  
     return false;  
@@ -41,6 +41,7 @@ $("#telefono").keyup(function(){
 
 })
 
+//CODIGO VERIFICACIÓN
 
 });
 
