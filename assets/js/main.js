@@ -14,7 +14,7 @@ $('#section1').hide(3000);
 
  //comprobar codigo numero de teléfono
 
-$("#enviar").click(function () {  
+$("#enviar").keyup(function () {  
     if(isNaN($("#telefono").val())) {  
          $(".alerta").text("Debes ingresar números");  
         return false;  
@@ -36,12 +36,24 @@ $("#telefono").keyup(function(){
 		$("#enviar").attr("id", "btn-next");
 		
 	} 
+	
 	//CODIGO VERIFICACIÓN
-	$("#enviar").click(function(){
-$('#myModal').modal('hide');
-		$('#myModal2').modal('show');
-	})
 
+$('#enviar').click(function(){
+ if($("#telefono").val().length===10 && $(this).val()!=NaN ){
+   var code = '';
+   var num = '123456789';
+   for(var i = 0; i < 3; i++){
+   	code += num.charAt(Math.floor(Math.random()*num.length));
+   }
+   $(".modal-body2").text("Tu código Lab: " + code);
+   $('#myModal').modal('hide');
+		$('#myModal2').modal('show');
+ 
+ } else {
+ 	$(".modal-body2").text ("Debes ingresar números")
+ }
+})
 
 })
 
