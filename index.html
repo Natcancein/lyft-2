@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="assets/css/load.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/flags/flags.min.css">
+
 
 
 	<title>Lyft</title>
@@ -26,37 +28,41 @@
       </div>
     <div class="row">
 
-      <div class="dropdown col-xs-offset-1">
+  
+      <div class="row">
+  <div class="col-xs-offset-1 col-xs-10">
+    <div class="input-group ">
+      <div class="input-group-btn countryList">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          <img src="assets/flags/blank.gif" class="flag flag-mx" alt="Mexico"/>
+          <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#"> <img src="assets/flags/blank.gif" class="flag flag-co" alt="Colombia"></a></li>
+          <li><a href="#"> <img src="assets/flags/blank.gif" alt="Perú" class="flag flag-pe"></a></li>
+          <li><a href="#"><img src="assets/flags/blank.gif" alt="United States" class="flag flag-us"></a></li>
+        
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" id="telefono" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
 
-  <button class=" btn btn-default dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <img src="assets/img/banderas/Bandera_Chile.jpg" class="img-responsive" alt="chile">
-    <span class="caret"></span>
-  </button>
 
-  <ul class="col-xs-offset-1 col-xs-4 dropdown-menu country" aria-labelledby="dropdownMenu1">
-    <li><a href="#"><img src="assets/img/banderas/bandera-bolivia.jpg" alt="bolivia"></a></li>
-    <li><a href="#"><img src="assets/img/banderas/bandera-de-colombia-con-escudo.jpg" alt="colombia"></a></li>
-    <li><a href="#"><img src="assets/img/banderas/bandera-de-mexico.png" alt="mexico"></a></li>
-    <li><a href="#"><img src="assets/img/banderas/bandera-de-peru.png" alt="peru"></a></li>
-  </ul>
-</div>
-
-    <div class="col-xs-offset-4 col-xs-7 input-group phone">
-  <input id="telefono" type="text" class="form-control form-phone" placeholder="56" aria-describedby="basic-addon1">
-</div>
- 
     </div>
 
-
+      <p class="modal-body" >We'll send a text to verify your phone</p>
       <div class="modal-footer">
-        <button id="enviar" type="button" class="btn btn-default col-xs-12" data-dismiss="modal">next</button>
+        <button id="enviar" type="button" class="btn btn-default col-xs-12 disabled" data-dismiss="modal">next</button>
       </div>
     </div>
   </div>
 </div>
 
-
-  <div class="logo">
+  <div id="logo">
     <div class="container-fluid ">
     <div class="row">
       <div class="col-xs-12 col-sm-12">
@@ -66,7 +72,7 @@
   </div>
   </div>
 	
-<div class="section1">
+<div id="section1">
   <div class="container-fluid ">
     <div class="row">
       <div class="col-xs-12 col-sm-12 logo2 image-responsive">
@@ -80,7 +86,7 @@
          LOG IN</button>
         </div>
       </div>
-      <div class=" col-xs-offset-2 col-xs-4 col-sm-6">
+      <div class=" col-xs-offset-1 col-xs-3 col-sm-offset-1 col-sm-3">
       <div class="btn-group">
         <button class="btn btn-default btn-lg dropdown-toggle signup" type="button" data-toggle="modal" data-target="#myModal" aria-haspopup="true" aria-expanded="false">
          SING UP</button>

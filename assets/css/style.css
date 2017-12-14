@@ -1,6 +1,6 @@
 
 
-.logo{
+#logo{
     background: #D70070; /* Para browsers que no soportan gradientes */
     background: -webkit-linear-gradient(left top, #430049, #E10073); /* Para Safari 5.1 a 6.0 */
     background: -o-linear-gradient(bottom right, #430049, #E10073); /* Para Opera 11.1 a 12.0 */
@@ -15,7 +15,7 @@
 /*  z-index: 1;*/
 }
 
-.logo img {
+#logo img {
   padding-top: 35vh;
     padding-bottom: 50vh;
     padding-left: 25vw;
@@ -33,8 +33,7 @@
 .white {
 
  width: 100%;
- margin-left: auto;
- margin-right: auto;
+ margin-right: 23%;
 }
 
 .lyftlyfe {
@@ -71,6 +70,27 @@
     margin-top: -10.5%;
 }
 
+.countryList {
+    height: 5vh;
+}
 .country{
     margin-bottom: -18.5%;
+}
+
+
+#btn-next {
+    width:100%;
+    background-color:#E90075;
+    color:#FFF;
+}
+
+.disabled {
+    cursor: not-allowed;
+    opacity: .65;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    line-height: 20px;
+    width: 100%;
+
 }
