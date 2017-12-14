@@ -1,31 +1,76 @@
-body{
-font-family: 'Montserrat', sans-serif;
-}
 
 
 .logo{
- background: #D70070; /* For browsers that do not support gradients */
- background: -webkit-linear-gradient(left top, #430049, #E10073); /* For Safari 5.1 to 6.0 */
- background: -o-linear-gradient(bottom right, #430049, #E10073); /* For Opera 11.1 to 12.0 */
- background: -moz-linear-gradient(bottom right,#430049, #E10073); /* For Firefox 3.6 to 15 */
- background: linear-gradient(to bottom right, #430049, #E10073); /* Standard syntax */
-position: fixed;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-overflow: auto;
-z-index: 1;
-
-
+    background: #D70070; /* Para browsers que no soportan gradientes */
+    background: -webkit-linear-gradient(left top, #430049, #E10073); /* Para Safari 5.1 a 6.0 */
+    background: -o-linear-gradient(bottom right, #430049, #E10073); /* Para Opera 11.1 a 12.0 */
+    background: -moz-linear-gradient(bottom right,#430049, #E10073); /* Para Firefox 3.6 a 15 */
+    background: linear-gradient(to bottom right, #430049, #E10073); /* Standard syntax */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+/*  z-index: 1;*/
 }
 
 .logo img {
-
   padding-top: 35vh;
-	padding-bottom: 50vh;
-	padding-left: 25vw;
-	width: 70%;
-	display:flex;
-	justify-content:center;
+    padding-bottom: 50vh;
+    padding-left: 25vw;
+    width: 70%;
+    display:flex;
+    justify-content:center;
+}
+
+.logo2{
+    background-image: url(../img/lyft-hero.jpg);
+    height:100vh;
+    width:100vw;
+}
+
+.white {
+
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.lyftlyfe {
+    width:100%;
+    margin-top: 20vh;
+}
+
+.login {
+    margin-top: 40%;
+    background: transparent;
+    color:white;
+}
+
+.signup{
+    margin-top: -52%;
+     background: transparent;
+    color:white;
+}
+
+#myModalLabel{
+    text-align: center;
+}
+
+.modal-body{
+    text-align: center;
+    font-size: 12px;
+}
+
+.form-phone{
+    height: 50px;
+    margin-bottom: 30px;
+}
+.phone{
+    margin-top: -10.5%;
+}
+
+.country{
+    margin-bottom: -18.5%;
 }
