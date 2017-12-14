@@ -13,13 +13,6 @@ $('#section1').hide(3000);
     },2000);
 
  //comprobar codigo numero de teléfono
-$("#enviar").click(function () {  
-    if($("#telefono").val().length == " ") {  
-        $(".alerta").text("El teléfono es obligatorio");  
-        return false;  
-    }  
-    return false;  
-}); 
 
 $("#enviar").click(function () {  
     if(isNaN($("#telefono").val())) {  
@@ -30,6 +23,10 @@ $("#enviar").click(function () {
 });  
 
 // BOTON NEXT
+$("#signup").click(() =>{
+
+$('#myModal').modal('show');
+});
 
 $("#telefono").keyup(function(){
 	if ($(this).val().length<10){
@@ -37,11 +34,19 @@ $("#telefono").keyup(function(){
 	}else {
 		$("#enviar").removeAttr("class", "disabled");
 		$("#enviar").attr("id", "btn-next");
+		
 	} 
+	//CODIGO VERIFICACIÓN
+	$("#enviar").click(function(){
+$('#myModal').modal('hide');
+		$('#myModal2').modal('show');
+	})
+
 
 })
 
-//CODIGO VERIFICACIÓN
+
+
 
 });
 
